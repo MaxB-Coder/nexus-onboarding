@@ -1,0 +1,165 @@
+.application-list {
+  width: 100%;
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 30px rgba(13, 35, 60, 0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.application-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--barclays-blue), #6fd6ff);
+}
+
+.application-list h2 {
+  color: var(--barclays-ink);
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--barclays-blue);
+  letter-spacing: 0.3px;
+}
+
+.table-container {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  background: var(--surface);
+}
+
+th,
+td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: rgba(11, 31, 58, 0.04);
+  color: var(--barclays-slate);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.6px;
+}
+
+tr:hover {
+  background: rgba(0, 174, 240, 0.06);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.badge-success {
+  background: rgba(0, 166, 81, 0.12);
+  color: #007a3d;
+}
+
+.badge-warning {
+  background: rgba(245, 166, 35, 0.16);
+  color: #8a5a00;
+}
+
+.badge-danger {
+  background: rgba(208, 2, 27, 0.12);
+  color: #a10014;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 6px 14px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  transition: all 0.2s ease;
+  min-width: 96px;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(11, 31, 58, 0.15);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-approve {
+  background: var(--barclays-blue);
+  color: white;
+}
+
+.btn-approve:hover {
+  background: #0095c9;
+}
+
+.btn-reject {
+  background: white;
+  color: var(--barclays-navy);
+  border: 1px solid var(--barclays-navy);
+}
+
+.btn-reject:hover {
+  background: var(--barclays-navy);
+  color: white;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 40px;
+  color: var(--barclays-blue);
+}
+
+.error-message {
+  text-align: center;
+  padding: 20px;
+  color: #a10014;
+  background: rgba(208, 2, 27, 0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(208, 2, 27, 0.3);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: var(--barclays-slate);
+}
