@@ -10,4 +10,4 @@ FROM eclipse-temurin:17-jre
 WORKDIR /workspace
 COPY --from=build /workspace/target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-XX:MaxRAMPercentage=75", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-XX:MaxRAMPercentage=75", "-jar", "onboarding-0.0.1-SNAPSHOT.jar"]
