@@ -29,7 +29,7 @@ jobs:
 
       - name: Deploy to Cloud Run
         run: |
-          gcloud run deploy nexus-backend \
+          gcloud run deploy nexus-backend-eu \
             --source backend \
             --region europe-west2 \
             --platform managed \
