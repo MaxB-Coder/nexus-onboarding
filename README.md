@@ -112,5 +112,5 @@ This project uses a split-stack architecture:
 ## 👤 Author
 
 **Max Blaschek**
-* [LinkedIn](https://linkedin.com/in/your-profile)
-* [GitHub](https://github.com/your-username)
+* [LinkedIn](https://www.linkedin.com/in/maxblaschek/)
+* [GitHub](https://github.com/MaxB-Coder)
