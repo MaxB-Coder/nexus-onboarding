@@ -1,5 +1,4 @@
-secrets.properties
-.env.production
+dev.properties
 
 deploy.sh
 .DS_STORE
