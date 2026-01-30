@@ -62,3 +62,55 @@ Follow these steps to run the project locally.
 Ensure your local Postgres server is running, then create the local database:
 ```bash
 createdb nexus_local
+```
+
+### **2. Backend Setup (Spring Boot)**
+The application uses a **profile-based** configuration to keep local secrets safe.
+
+1.  Navigate to the backend folder:
+    ```bash
+    cd backend
+    ```
+2.  Create a local configuration file to override production settings:
+    * Create a file at: `src/main/resources/application-local.properties`
+    * Add your local credentials (ensure this file is in `.gitignore`):
+    ```properties
+    DB_URL=jdbc:postgresql://localhost:5432/nexus_local
+    DB_USER=postgres
+    DB_PASSWORD=your_local_password
+    ```
+3.  Run the application:
+    ```bash
+    mvn spring-boot:run
+    ```
+    *The server will start on `http://localhost:8080`.*
+
+### **3. Frontend Setup (React)**
+1.  Navigate to the frontend folder:
+    ```bash
+    cd frontend
+    ```
+2.  Install dependencies and start:
+    ```bash
+    npm install
+    npm run dev
+    ```
+    *The UI will launch at `http://localhost:5173`.*
+
+---
+
+## ☁️ Architecture & Deployment
+
+This project uses a split-stack architecture:
+
+* **Frontend:** The React SPA is hosted on **Firebase**, providing global CDN performance.
+* **Backend:** The Spring Boot API runs on **Google Cloud Run**, utilizing a Docker container built via GitHub Actions.
+* **Database:** **Neon (Postgres)** provides a serverless database tier with enforced SSL security (`?sslmode=require`) for production data.
+
+---
+
+## 👤 Author
+
+**Max Blaschek**
+* [LinkedIn](https://linkedin.com/in/your-profile)
+* [GitHub](https://github.com/your-username)
