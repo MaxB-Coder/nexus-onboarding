@@ -1,8 +1,8 @@
 // src/services/api.js
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:8080/api/applications';
-const ADMIN_BASE = 'http://localhost:8080/api/admin';
+const API_BASE = `${import.meta.env.VITE_API_BASE}/api/applications`;
+const ADMIN_BASE = `${import.meta.env.VITE_API_BASE}/api/admin`;
 
 export const fetchApplications = () => axios.get(API_BASE + '/');
 

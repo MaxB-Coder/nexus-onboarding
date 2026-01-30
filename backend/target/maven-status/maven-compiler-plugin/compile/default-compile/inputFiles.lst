@@ -1,5 +1,6 @@
 /Users/maxblaschek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Projects/nexusOnboarding/backend/src/main/java/com/investmentbank/onboarding/OnboardingApplication.java
 /Users/maxblaschek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Projects/nexusOnboarding/backend/src/main/java/com/investmentbank/onboarding/config/AdminSeeder.java
+/Users/maxblaschek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Projects/nexusOnboarding/backend/src/main/java/com/investmentbank/onboarding/config/CORSconfig.java
 /Users/maxblaschek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Projects/nexusOnboarding/backend/src/main/java/com/investmentbank/onboarding/controller/AdminAuthController.java
 /Users/maxblaschek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Projects/nexusOnboarding/backend/src/main/java/com/investmentbank/onboarding/controller/OnboardingController.java
 /Users/maxblaschek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Projects/nexusOnboarding/backend/src/main/java/com/investmentbank/onboarding/model/AdminUser.java
