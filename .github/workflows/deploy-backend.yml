@@ -1,0 +1,39 @@
+name: Deploy Backend to Cloud Run
+
+on:
+  push:
+    branches: ['main']
+    paths:
+      - 'backend/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: 'projects/773310683689/locations/global/workloadIdentityPools/github-pool/providers/github'
+          service_account: 'github-deployer@nexus-onboarding-2026.iam.gserviceaccount.com'
+
+      - name: Set up gcloud
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy nexus-backend \
+            --source backend \
+            --region us-central1 \
+            --platform managed \
+            --allow-unauthenticated \
+            --max-instances 2 \
+            --memory 512Mi \
+            --cpu 1
