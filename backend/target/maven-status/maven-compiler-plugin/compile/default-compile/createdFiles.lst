@@ -1,0 +1,12 @@
+com/investmentbank/onboarding/OnboardingApplication.class
+com/investmentbank/onboarding/controller/AdminAuthController$AdminLoginRequest.class
+com/investmentbank/onboarding/model/ClientApplication$Status.class
+com/investmentbank/onboarding/repository/ClientApplicationRepository.class
+com/investmentbank/onboarding/controller/AdminAuthController.class
+com/investmentbank/onboarding/model/AdminUser.class
+com/investmentbank/onboarding/repository/AdminUserRepository.class
+com/investmentbank/onboarding/model/ClientApplication.class
+com/investmentbank/onboarding/service/OnboardingService.class
+com/investmentbank/onboarding/service/AdminAuthService.class
+com/investmentbank/onboarding/config/AdminSeeder.class
+com/investmentbank/onboarding/controller/OnboardingController.class

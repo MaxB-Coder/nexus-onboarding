@@ -1,0 +1,6 @@
+com/investmentbank/onboarding/controller/OnboardingControllerTest.class
+com/investmentbank/onboarding/repository/ClientApplicationRepositoryTest.class
+com/investmentbank/onboarding/repository/AdminUserRepositoryTest.class
+com/investmentbank/onboarding/controller/AdminAuthControllerTest.class
+com/investmentbank/onboarding/service/OnboardingServiceTest.class
+com/investmentbank/onboarding/service/AdminAuthServiceTest.class
